@@ -71,8 +71,14 @@ npm run dev
 
 ##📷 Screenshots
 
-### 🏠 Home Page
-![Home Page](screenshots/homepage.png)
+<h3>🏠 Home Page</h3>
+<img src="screenshots/homepage.png" alt="Home Page" width="700" />
+
+<h3>🔍 Search Results</h3>
+<img src="screenshots/search.png" alt="Search Results" width="700" />
+
+<h3>📱 Mobile View</h3>
+<img src="screenshots/mobile.png" alt="Mobile View" width="600" />
 
 
 ##🔐 Environment Variables
