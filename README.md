@@ -78,7 +78,7 @@ npm run dev
 <img src="screenshots/search.png" alt="Search Results" width="700" />
 
 <h3>📱 Mobile View</h3>
-<img src="screenshots/mobile.png" alt="Mobile View" width="600" />
+<img src="screenshots/mobile.png" alt="Mobile View" width="200" hight="400" />
 
 
 ##🔐 Environment Variables
