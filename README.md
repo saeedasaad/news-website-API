@@ -103,6 +103,6 @@ NewsAPI.org
 -Tailwind CSS
 -Font Awesome
 
-##✨ Live Demo
+🔗 **[Live Demo](https://saeedasaad.github.io/todo-list-progress-tracker/)**
 
 ---
