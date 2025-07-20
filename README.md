@@ -60,7 +60,7 @@ npm install
 ### 3. Setup NewsAPI Key
 
 ```bash
-VITE_NEWS_API_KEY=your_api_key_here
+VITE_NEWS_API_KEY=a5a031962299402299d659e0493f56a1
 
 ```
 ### 4. Run the App
@@ -84,7 +84,7 @@ npm run dev
 ##🔐 Environment Variables
 
 Key	Description
-VITE_NEWS_API_KEY	Your NewsAPI API key
+VITE_NEWS_API_KEY	a5a031962299402299d659e0493f56a1
 
 ##🧪 Future Improvements
 -Add pagination or infinite scroll
@@ -99,14 +99,10 @@ This project is licensed under the MIT License.
 ##🙌 Acknowledgements
 NewsAPI.org
 
-Vite
-
-Tailwind CSS
-
-Font Awesome
+-Vite
+-Tailwind CSS
+-Font Awesome
 
 ##✨ Live Demo
 
 ---
-
-Would you like me to generate a `.env` example file or a `LICENSE` file too?
