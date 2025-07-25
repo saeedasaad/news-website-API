@@ -5,5 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-base: '/news-website-API/',
+  base: '/news-website-API/',
+
 })
