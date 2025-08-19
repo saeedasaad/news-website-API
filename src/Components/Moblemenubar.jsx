@@ -22,7 +22,7 @@ export default function MobileMenuBar() {
             {/* Lottie Menu Icon */}
             <button
                 onClick={handleToggle}
-                className={`z-[2000] w-[30px] h-[30px] p-0 bg-transparent border-none cursor-pointer transition-transform duration-500 ${isOpen ? 'rotate-[90deg]' : 'rotate-0'
+                className={`z-[2000] w-[25px] h-[25px] p-0 bg-transparent border-none cursor-pointer transition-transform duration-500 ${isOpen ? 'rotate-[90deg]' : 'rotate-0'
                     } xl:hidden lg:hidden block`}
             >
                 <Lottie
@@ -36,8 +36,8 @@ export default function MobileMenuBar() {
 
             {/* Slide Menu */}
             {isOpen && (
-                <div className="fixed top-0 w-[100%] h-[50%] z-[999] bg-white border border-[#38383822] shadow-lg shadow-[#dc959e42] p-8 flex flex-col gap-8 transition-all duration-300">
-                    <ul className="flex flex-col space-y-6 font-medium text-black text-xl mt-14">
+                <div className="fixed top-0 w-full h-[60%] z-[999] bg-white border border-[#38383822] shadow-lg shadow-[#dc959e42] p-8 flex flex-col gap-8 transition-all duration-300">
+                    <ul className="flex flex-col space-y-4 font-medium text-black md:text-xl text-md mt-14">
                         <li className="relative inline-flex items-center transition-all duration-300 group hover:text-[#fd5168]
               after:absolute after:bottom-[-2px] after:left-1/20  after:-translate-x-1/2 after:h-[2px] after:w-0 hover:after:w-[80px] after:bg-[#fd5168] after:transition-all after:duration-500">
                             All News

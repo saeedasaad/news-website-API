@@ -46,7 +46,7 @@ export default function Newsapp() {
                 </div>
                 {/* Center: Logo */}
                 <div className="text-center">
-                    <h1 className="text-3xl sm:text-3xl md:text-4xl font-extrabold text-gray-800 tracking-tight">
+                    <h1 className="text-xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 tracking-tight">
                         Trending <span className="text-[#fd5168]">News</span>
                     </h1>
                 </div>
