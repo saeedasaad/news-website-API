@@ -3,7 +3,7 @@ import Card from './Card';
 import Menubar from './Menubar';
 import SearchBar from './searchbar';
 import ScrollTopButton from './ScrollTopButton';
-import MobileMenuBar from './moblemenubar';
+import MobileMenuBar from './Moblemenubar';
 
 export default function Newsapp() {
     const [search, setSearch] = useState('pakistan');
