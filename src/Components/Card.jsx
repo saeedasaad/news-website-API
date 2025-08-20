@@ -21,7 +21,7 @@ export default function Card({ data }) {
                             <div className="shine-effect">
                                 <img
                                     src={curitem.urlToImage || 'https://via.placeholder.com/400x250?text=No+Image'}
-                                    alt={curitem.title}
+                                    alt={curitem.title || "Untitled Article"}
                                     className="grayscale-80 w-full h-[350px] object-cover"
                                 />
                             </div>
@@ -36,7 +36,7 @@ export default function Card({ data }) {
                         <hr className="bg-[#fd5168] w-[100px] h-[2px] my-8 border-none" />
 
                         <p className="mt-6 text-gray-700 text-sm md:text-base leading-relaxed">
-                            {curitem.description}
+                            {curitem.description || "No description available."}
                         </p>
 
                         <a

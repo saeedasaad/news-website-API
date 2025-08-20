@@ -14,11 +14,21 @@ export default function Newsapp() {
     const getData = async () => {
         try {
             const response = await fetch(`https://newsapi.org/v2/everything?q=${search}&apiKey=${API_key}`);
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
             const jsonData = await response.json();
+
+            if (!jsonData.articles) {
+                throw new Error("No articles found in response.");
+            }
+
             console.log(jsonData.articles);
-            setNewsData(jsonData.articles || []);
+            setNewsData(jsonData.articles);
         } catch (error) {
-            console.error("Error fetching data:", error);
+            console.error("Error fetching data:", error.message);
             setNewsData([]);
         }
     };
