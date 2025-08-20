@@ -5,36 +5,26 @@ import SearchBar from './searchbar';
 import ScrollTopButton from './ScrollTopButton';
 import MobileMenuBar from './Moblemenubar';
 
-
 export default function Newsapp() {
     const [search, setSearch] = useState('pakistan');
     const [newsData, setNewsData] = useState([]);
 
     const apiKey = import.meta.env.VITE_NEWS_API_KEY;
-    // const API_key = "a5a031962299402299d659e0493f56a1";
+
 
     const getData = async () => {
         try {
-            const url = `https://newsapi.org/v2/top-headlines?q=${search}&apiKey=${apiKey}`;
-            const response = await fetch(url);
-
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
+            const response = await fetch(`https://newsapi.org/v2/everything?q=${search}&apiKey=${apiKey}`);
 
             const jsonData = await response.json();
-
-            if (!jsonData.articles) {
-                throw new Error("No articles found in response.");
-            }
-
             console.log(jsonData.articles);
-            setNewsData(jsonData.articles);
+            setNewsData(jsonData.articles || []);
         } catch (error) {
-            console.error("Error fetching data:", error.message);
+            console.error("Error fetching data:", error);
             setNewsData([]);
         }
     };
+
     useEffect(() => {
         getData();
     }, []);
@@ -103,8 +93,11 @@ export default function Newsapp() {
 
 
             {/* News Cards Section */}
+            <div className='pb-20'>
+                <Card data={newsData} />
+            </div>
 
-            <Card data={newsData} />
+
 
             <ScrollTopButton />
 
